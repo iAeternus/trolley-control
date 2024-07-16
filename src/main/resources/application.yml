@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: trolley-control
+  profiles:
+    active: dev
+
+knife4j:
+  enable: true
+  basic:
+    enable: false
+    username: admin
+    password: admin
+  openapi:
+    title: trolley-control接口文档
+    description: "trolley-control接口文档"
+    email: 10449469060@qq.com
+    version: 0.0.1-SNAPSHOT
+    license: Apache 2.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.ricky.trolley.control.trigger.http
